@@ -1,0 +1,29 @@
+{
+    "empid": {
+        "year": {
+            "month": [
+                {
+                    "tiketIDInfo": [
+                        {
+                            "id": "",
+                            "hours": "",
+                            "dueDate": "",
+                            "capacity": "",
+                            "accumulativeHour": "",
+                            "newDueDate": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "project": {},
+        "team": {},
+        "projectManager": {},
+        "leave": [
+            {
+                "sl": "2",
+                "el": ""
+            }
+        ]
+    }
+}
