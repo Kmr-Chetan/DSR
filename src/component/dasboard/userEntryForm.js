@@ -46,7 +46,7 @@ export default function UserEntryForm() {
               type="text"
               name="ticketId2"
               className="form-control"
-              id="ticketId2"
+              id="ticketId"
               placeholder="Enter ticketId number"
               required
             />
