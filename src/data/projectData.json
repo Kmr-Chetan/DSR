@@ -1,0 +1,15 @@
+{
+    "project": [
+        {
+            "projectName": "Samsung",
+            "startDate": "",
+            "endDate": "",
+            "projectId": "Samsung",
+            "team": [
+                "Electron",
+                "Android",
+                "IOS"
+            ]
+        }
+    ]
+}

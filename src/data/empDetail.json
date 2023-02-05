@@ -1,0 +1,72 @@
+{
+    "empDetails": [
+        {
+            "empName": "Chetan",
+            "empID": "123",
+            "designiation": [
+                {
+                    "designiation": "UI consultant",
+                    "startDate": "",
+                    "endDate": ""
+                }
+            ],
+            "ProjectMangaer": [
+                {
+                    "PM_Name": "Kavita",
+                    "startDate": "",
+                    "endDate": "",
+                    "PM_ID": "pmTest01"
+                }
+            ],
+            "project": [
+                {
+                    "projectName": "Samsung",
+                    "startDate": "",
+                    "endDate": "",
+                    "projectId": "Samsung",
+                    "team": [
+                        {
+                            "teamName": "Electron",
+                            "startDate": "",
+                            "endDate": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "empName": "Amit",
+            "empID": "124",
+            "designiation": [
+                {
+                    "designiation": "UI consultant",
+                    "startDate": "",
+                    "endDate": ""
+                }
+            ],
+            "ProjectMangaer": [
+                {
+                    "PM_Name": "Kavita",
+                    "startDate": "",
+                    "endDate": "",
+                    "PM_ID": "pmTest01"
+                }
+            ],
+            "project": [
+                {
+                    "projectName": "Samsung",
+                    "startDate": "",
+                    "endDate": "",
+                    "projectId": "",
+                    "team": [
+                        {
+                            "teamName": "Electron",
+                            "startDate": "",
+                            "endDate": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -3,7 +3,7 @@ import Tracker from "./tracker";
 import UserEntryForm from "./userEntryForm";
 
 function Dashboard() {
-  return <>iii</>;
+  return <><Tracker /></>;
 }
 
 export default Dashboard;
