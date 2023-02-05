@@ -1,5 +1,4 @@
 import DSR from "../../../data/dsrDetail.json";
-import temp from "../../../data/temp";
 
 function DailyChart() {
 
@@ -7,11 +6,10 @@ function DailyChart() {
     console.log(DSR["2023"][0]["02"]["23/02/2023"]);
   });
 
+
   const detailHandler =() => {
 
   }
-
-  console.log(temp);
 
   return (
     <>
@@ -19,7 +17,7 @@ function DailyChart() {
         <div class="col-2">
           <div class="list-group" id="list-tab" role="tablist">
             {Object.keys(DSR).map((data) => {
-              return Object.keys(DSR["2023"][0]["02"]["23/02/2023"]).map(
+              return Object.keys(DSR["2023"][0]["02"]["23"]).map(
                 (data) => {
                   return (
                     <a class="list-group-item list-group-item-action" onClick={detailHandler} >
