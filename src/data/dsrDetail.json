@@ -50,7 +50,7 @@
                         "teamId": "Electron",
                         "teamName": "Electron"
                     },
-                    "empID2": {
+                    "124": {
                         "taskDetails": [
                             {
                                 "acc_story": "5",
@@ -108,6 +108,193 @@
                                 "status": "Working",
                                 "story_point": "14",
                                 "task_id": "KT-123",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
+                            }
+                        ],
+                        "leave": [
+                            {
+                                "unplanLeave": "2",
+                                "planLeave": ""
+                            }
+                        ],
+                        "sprintTimeLine": 2,
+                        "sprint": {
+                            "sprintName": " tesmp1",
+                            "timeLine": 23,
+                            "capacity": 64
+                        },
+                        "projectId": "Samsung",
+                        "teamId": "Electron"
+                    }
+                },
+                "07": {
+                    "123": {
+                        "taskDetails": [
+                            {
+                                "acc_story": "5",
+                                "completion_date": "2023-02-08",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "14",
+                                "task_id": "KT-123",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
+                            },
+                            {
+                                "acc_story": "5",
+                                "completion_date": "2023-02-08",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "14",
+                                "task_id": "KT-123",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
+                            }
+                        ],
+                        "leave": [
+                            {
+                                "unplanLeave": "2",
+                                "planLeave": ""
+                            }
+                        ],
+                        "sprintTimeLine": 2,
+                        "sprint": {
+                            "sprintName": " tesmp1",
+                            "timeLine": 23,
+                            "capacity": 64
+                        },
+                        "projectId": "Samsung",
+                        "teamId": "Electron",
+                        "teamName": "Electron"
+                    },
+                    "empID2": {
+                        "taskDetails": [
+                            {
+                                "acc_story": "5",
+                                "completion_date": "2023-02-07",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "6",
+                                "task_id": "KT-1234",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
+                            },
+                            {
+                                "acc_story": "5",
+                                "completion_date": "2023-02-09",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "4",
+                                "task_id": "KT-1235",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
+                            }
+                        ],
+                        "leave": [
+                            {
+                                "unplanLeave": "",
+                                "planLeave": ""
+                            }
+                        ],
+                        "sprintTimeLine": 2,
+                        "sprint": {
+                            "sprintName": " tesmp1",
+                            "timeLine": 23,
+                            "capacity": 64
+                        },
+                        "projectId": "Samsung",
+                        "teamId": "Electron",
+                        "teamName": "Electron"
+                    },
+                    "empID3": {
+                        "taskDetails": [
+                            {
+                                "acc_story": "5",
+                                "completion_date": "",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-08",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "8",
+                                "task_id": "KT-0124",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
+                            },
+                            {
+                                "acc_story": "5",
+                                "completion_date": "",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "8",
+                                "task_id": "KT-0123",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
+                            }
+                        ],
+                        "leave": [
+                            {
+                                "unplanLeave": "2",
+                                "planLeave": ""
+                            }
+                        ],
+                        "sprintTimeLine": 2,
+                        "sprint": {
+                            "sprintName": " tesmp1",
+                            "timeLine": 23,
+                            "capacity": 64
+                        },
+                        "projectId": "Samsung",
+                        "teamId": "Electron"
+                    },"124": {
+                        "taskDetails": [
+                            {
+                                "acc_story": "5",
+                                "completion_date": "",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-08",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "8",
+                                "task_id": "KT-0124",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
+                            },
+                            {
+                                "acc_story": "5",
+                                "completion_date": "",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "8",
+                                "task_id": "KT-0123",
                                 "type": "Bug Fix",
                                 "newDueDate": null,
                                 "completionDate": "",

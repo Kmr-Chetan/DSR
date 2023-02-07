@@ -7,9 +7,6 @@ import MonthlyDsrReport from "./monthlyDsrReport.js/monthlyDsrReport";
 import { useState } from "react";
 function Tracker() {
   const [location, setLoction] = useState("");
-  Object.keys(DSR).forEach((data) => {
-    console.log(DSR["2023"][0]["02"]["23/02/2023"]);
-  });
 
   const date = new Date();
   const current_date =

@@ -7,6 +7,8 @@ import TodayDsrReport from "../modalDailyDsrReport";
 function ProjectWiseData() {
   const [team, setTeam] = useState([]);
   const [emp, setEmp] = useState([]);
+  const [empID, setEmpID] = useState([]);
+  const [empName, setEmpName] = useState([]);
   const [fullscreen, setFullscreen] = useState(false);
   const [show, setShow] = useState(false);
   const projectHandler = (team) => {
@@ -28,11 +30,13 @@ function ProjectWiseData() {
     });
   };
 
-  const handleShow = (breakpoint) => {
-    // setFullscreen(breakpoint);
+  const handleShow = (empID, empName) => {
+    setEmpID(empID);
+    console.log("data.empName", empName);
+    setEmpName(empName);
     setShow(true);
   };
-  console.log("show", show);
+
   return (
     <>
       <div className="row">
@@ -52,7 +56,7 @@ function ProjectWiseData() {
             })}
           </div>
         </div>
-        <div className="col-2  mt-1">
+        {team.length > 0 && <div className="col-2  mt-1">
           <div class="card">
             <h4 class="card-header">Team list</h4>
           </div>
@@ -68,8 +72,8 @@ function ProjectWiseData() {
               );
             })}
           </div>
-        </div>
-        <div class="col-4 mt-3">
+        </div>}
+        {emp.length >0 &&<div class="col-4 mt-3">
           <div class="card">
             <h4 class="card-header">Employee list</h4>
           </div>
@@ -86,7 +90,7 @@ function ProjectWiseData() {
                     {data.empName}
                     <button
                       type="button"
-                      onClick={() => handleShow(true)}
+                      onClick={() => handleShow(data.empID, data.empName)}
                       class="btn btn-secondary ml-auto"
                     >
                       DSR status
@@ -96,9 +100,9 @@ function ProjectWiseData() {
               })}
             </div>
           </div>
-        </div>
+        </div>}
       </div>
-      {show && <TodayDsrReport setShow={(value) => setShow(value)} />}
+      {show && <TodayDsrReport emp={empID} empName= {empName} setShow={(value) => setShow(value)} />}
     </>
   );
 }
