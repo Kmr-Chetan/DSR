@@ -1,147 +1,98 @@
-import { useState } from "react";
+import React, { useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
-export default function UserEntryForm() {
-  const [ticketId, setTicketId] = useState("");
-  const [rowData, setRowData] = useState([]);
-  const [hour, setHour] = useState({});
-  const [dueDate, setdueDate] = useState({});
+function UserEntryForm(props) {
+    const [state, setState] = useState({});
+    const [empId, setEmpID] = useState();
 
-//   const ticketHandler = (event) => {
-//     setTicketId(event.target.value);
-//   };
+    const handleInputChange = (event) => {
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
+        if(name === 'emp_id'){
+            setEmpID(value);
+        }
+        else {
+            setState({...state, [name]: value,});
+        }
+    };
 
-//   const hourHandler = (event) => {
-//     console.log("test");
-//     setHour(event.target.value);
-//   };
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(state);
+    };
 
-//   const dueDateHandler = (event) => {
-//     setdueDate(event.target.value);
-//   };
-
-  const submitHandler = (event) => {
-    var object = {};
-    event.preventDefault();
-    const data = new FormData(event.target);
-    data.forEach(function (value, key) {
-      object[key] = value;
-    });
-    var json = JSON.stringify(object);
-    Object.entries(object).map((data) => {
-            console.log(data);
-    })
-    console.log(JSON.parse(json), json);
-    setTicketId("");
-  };
-
-  const rowHandler = (event) => {
-    event.preventDefault();
-    console.log("test");
-    const string = (
-      <>
-        <div className="row">
-          <div className="col-sm">
-            <label htmlFor="ticketId">Ticket ID</label>
-            <input
-              type="text"
-              name="ticketId2"
-              className="form-control"
-              id="ticketId"
-              placeholder="Enter ticketId number"
-              required
-            />
-          </div>
-          <div className="col-sm">
-            <label htmlFor="ticketId">Hours</label>
-            <input
-              type="text"
-              name="Hours2"
-              className="form-control"
-              id="Hours2"
-              placeholder="Enter total hours"
-              required
-            />
-          </div>
-          <div className="col-sm">
-            <label htmlFor="ticketId">Due Date</label>
-            <input
-              type="text"
-              name="Due_Date2"
-              className="form-control"
-              id="Due_Date2"
-              placeholder="Enter due date"
-              required
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <label htmlFor="ticketId">Description</label>
-            <textarea className="d-block" type="text" />
-          </div>
-        </div>
-      </>
+    return (
+        <Container className='mt-4'>
+            <h3>Today's Task</h3>
+            <hr></hr>
+            <Form onSubmit={handleSubmit}>
+                <Row className='mb-3 mt-4'>
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Team Name</Form.Label>
+                        <Form.Control type="text" placeholder="Team Name" name="team_name" onChange={handleInputChange} />
+                    </Form.Group>
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Employee ID</Form.Label>
+                        <Form.Control type="text" placeholder="Employee ID" name="emp_id" onChange={handleInputChange}/>
+                    </Form.Group>
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Employee Name</Form.Label>
+                        <Form.Control type="text" placeholder="Employee Name" name="emp_name" onChange={handleInputChange}/>
+                    </Form.Group>
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Accumulated Story Point</Form.Label>
+                        <Form.Control type="text" placeholder="Accumulated Story Point" onChange={handleInputChange} name="acc_story"/>
+                    </Form.Group>
+                </Row>
+                <Row className='mb-3'>
+                <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Task ID</Form.Label>
+                        <Form.Control type="text" placeholder="Task ID" name="task_id" onChange={handleInputChange}/>
+                    </Form.Group> 
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Description</Form.Label>
+                        <Form.Control type="text" placeholder="Description" name="description" onChange={handleInputChange}/>
+                    </Form.Group>
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Status</Form.Label>
+                        <Form.Control type="text" placeholder="Status" name="status" onChange={handleInputChange}/>
+                    </Form.Group>
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Type</Form.Label>
+                        <Form.Control type="text" placeholder="Task Type" name="type" onChange={handleInputChange}/>
+                    </Form.Group>
+                </Row>
+                <Row className='mb-3'>
+                <Form.Group as={Col} className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Due Date</Form.Label>
+                        <Form.Control type="date" placeholder="Due Date" name="dueDate" onChange={handleInputChange}/>
+                    </Form.Group> 
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Module</Form.Label>
+                        <Form.Control type="text" placeholder="module" name="module" onChange={handleInputChange}/>
+                    </Form.Group>
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Story Point</Form.Label>
+                        <Form.Control type="text" placeholder="Story Point" name="story_point" onChange={handleInputChange}/>
+                    </Form.Group>
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Completion Date</Form.Label>
+                        <Form.Control type="date" placeholder="Completion Date" name="completion_date" onChange={handleInputChange}/>
+                    </Form.Group> 
+                </Row>
+                <Row>
+                <Form.Group as={Col} className="mb-3 col-3" controlId="formBasicEmail">
+                    <Form.Label>Attendance</Form.Label>
+                    <Form.Control type="text" placeholder="Attendance" name='attendance' onChange={handleInputChange}/>
+                </Form.Group>  
+                <Col className="col-9 text-right mt-4"> <Button variant="primary" type="submit">Submit</Button></Col>
+                </Row>
+            </Form>
+        </Container>
     );
-
-    setRowData((oldArray) => [...oldArray, string]);
-  };
-
-  return (
-    <>
-      <form onSubmit={submitHandler}>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm">
-              <label htmlFor="ticketId">Ticket ID</label>
-              <input
-                type="text"
-                name="ticketId"
-                className="form-control"
-                id="ticketId"
-                placeholder="Enter ticketId number"
-                required
-              />
-            </div>
-            {/*............. drop down............... */}
-            <div className="col-sm">
-              <label htmlFor="ticketId">Hours</label>
-              <input
-                type="text"
-                name="Hours"
-                className="form-control"
-                id="Hours"
-                placeholder="Enter total hours"
-                required
-              />
-            </div>
-            <div className="col-sm">
-              <label htmlFor="ticketId">Due Date</label>
-              <input
-                type="text"
-                name="Due_Date"
-                className="form-control"
-                id="Due_Date"
-                placeholder="Enter due date"
-                required
-              />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col">
-              <label htmlFor="ticketId">Description</label>
-              <textarea   name="Description" className="d-block" type="text" />
-            </div>
-          </div>
-          <div>
-            {rowData.map((data, key) => {
-              return <div key={`${data.length + key}`}>{data}</div>;
-            })}
-          </div>
-        </div>
-
-        <button onClick={rowHandler}>Enter a new row</button>
-        <button type="submit">submit</button>
-      </form>
-    </>
-  );
 }
+
+export default UserEntryForm;

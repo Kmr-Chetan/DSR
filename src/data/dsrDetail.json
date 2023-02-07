@@ -4,25 +4,39 @@
             "02": {
                 "23": {
                     "123": {
-                        "taskDetail": [
+                        "taskDetails": [
                             {
-                                "id": "KT-01",
-                                "hours": 2,
-                                "dueDate": "25/02/2023",
-                                "accumulativeHour": 4,
-                                "newDueDate": null
+                                "acc_story": "5",
+                                "completion_date": "2023-02-07",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "14",
+                                "task_id": "KT-123",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
                             },
                             {
-                                "id": "KT-02",
-                                "hours": 2,
-                                "dueDate": "25/02/2023",
-                                "accumulativeHour": 4,
-                                "newDueDate": null
+                                "acc_story": "5",
+                                "completion_date": "2023-02-07",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "14",
+                                "task_id": "KT-123",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
                             }
                         ],
                         "leave": [
                             {
-                                "UnplanLeave": "2",
+                                "unplanLeave": "2",
                                 "planLeave": ""
                             }
                         ],
@@ -33,28 +47,29 @@
                             "capacity": 64
                         },
                         "projectId": "Samsung",
-                        "teamId": "Electron"
+                        "teamId": "Electron",
+                        "teamName": "Electron"
                     },
                     "empID2": {
-                        "taskDetail": [
+                        "taskDetails": [
                             {
-                                "id": "KT-02",
-                                "hours": 2,
-                                "dueDate": "25/02/2023",
-                                "accumulativeHour": 4,
-                                "newDueDate": null
-                            },
-                            {
-                                "id": "KT-03",
-                                "hours": 2,
-                                "dueDate": "25/02/2023",
-                                "accumulativeHour": 4,
-                                "newDueDate": null
+                                "acc_story": "5",
+                                "completion_date": "2023-02-07",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "14",
+                                "task_id": "KT-123",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
                             }
                         ],
                         "leave": [
                             {
-                                "UnplanLeave": "2",
+                                "unplanLeave": "2",
                                 "planLeave": ""
                             }
                         ],
@@ -65,28 +80,43 @@
                             "capacity": 64
                         },
                         "projectId": "Samsung",
-                        "teamId": "Electron"
+                        "teamId": "Electron",
+                        "teamName": "Electron"
                     },
                     "empID3": {
-                        "taskDetail": [
+                        "taskDetails": [
                             {
-                                "id": "KT-04",
-                                "hours": 2,
-                                "dueDate": "25/02/2023",
-                                "accumulativeHour": 4,
-                                "newDueDate": null
+                                "acc_story": "5",
+                                "completion_date": "2023-02-07",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "14",
+                                "task_id": "KT-123",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
                             },
                             {
-                                "id": "KT-05",
-                                "hours": 2,
-                                "dueDate": "25/02/2023",
-                                "accumulativeHour": 4,
-                                "newDueDate": null
+                                "acc_story": "5",
+                                "completion_date": "2023-02-07",
+                                "description": "configure API to get employee list data",
+                                "dueDate": "2023-02-07",
+                                "module": "App Directory",
+                                "status": "Working",
+                                "story_point": "14",
+                                "task_id": "KT-123",
+                                "type": "Bug Fix",
+                                "newDueDate": null,
+                                "completionDate": "",
+                                "attendance": ""
                             }
                         ],
                         "leave": [
                             {
-                                "UnplanLeave": "2",
+                                "unplanLeave": "2",
                                 "planLeave": ""
                             }
                         ],

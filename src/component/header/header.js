@@ -13,10 +13,10 @@ function Header() {
         <NavLink className="navbar-brand text-white" to="/">
           Home
         </NavLink>
-        <NavLink className="navbar-brand text-white" to="/UserEntryForm">
+        <NavLink active className="navbar-brand text-white" to="/UserEntryForm">
           DSR
         </NavLink>
-        <NavLink className="navbar-brand text-white" to="/Dashboard">
+        <NavLink className="navbar-brand text-white" to="/dashboard">
           Tracker
         </NavLink>
       </nav>
